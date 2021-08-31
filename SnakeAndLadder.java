@@ -27,12 +27,14 @@ public class SnakeAndLadder {
             if (option == IS_SNAKE) {
                 System.out.println("Snake for the player");
                 startPosition = startPosition - diceNumber;
+                System.out.println(startPosition);
                 if (position < 0) {
                     position = 0;
                 }
             } else if (option == IS_LADDER) {
                 System.out.println("Ladder for the player");
                 startPosition = startPosition + diceNumber;
+                System.out.println(startPosition);
                 if (position > 100) {
                     position -= diceNumber;
                 }
@@ -42,4 +44,3 @@ public class SnakeAndLadder {
             System.out.println(diceNumber);
     }
 }
-
