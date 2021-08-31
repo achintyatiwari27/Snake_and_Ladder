@@ -18,7 +18,8 @@ public class SnakeAndLadder {
             diceNumber = (int) (Math.floor(Math.random() * 10) % 6 + 1);
             System.out.println(diceNumber);
             option = (int) (Math.floor(Math.random() * 10) % 3);
-            if (option == 1) {
+            
+                if (option == 1) {
                 System.out.println("Snake for thr player");
                 playerPosition -= diceNumber;
                 if (playerPosition < 0) {
