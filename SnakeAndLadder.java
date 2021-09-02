@@ -13,6 +13,7 @@ public class SnakeAndLadder {
         int diceNumber = 0;
         int option = 0;
         int playerPosition = 0;
+        int diceCount = 0;
 
         for (playerPosition = 0; playerPosition <= 100; playerPosition++) {
             diceNumber = (int) (Math.floor(Math.random() * 10) % 6 + 1);
@@ -25,12 +26,16 @@ public class SnakeAndLadder {
                 if (playerPosition < 0) {
                     playerPosition = 0;
                 }
+                diceCount += playerPosition;
+                    System.out.println("Diceount " + diceCount);
             } else if (option == 2) {
                 System.out.println("Ladder for the player");
                 playerPosition += diceNumber;
                     if (playerPosition > 100) {
                         playerPosition -= diceNumber;
                     }
+                    diceCount += playerPosition;
+                    System.out.println("Diceount " + diceCount);
             } else {
                 System.out.println("No Play for the player");
             }
@@ -38,4 +43,5 @@ public class SnakeAndLadder {
         }
     }
 }
+
 
