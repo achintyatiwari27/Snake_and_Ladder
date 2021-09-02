@@ -27,10 +27,7 @@ public class SnakeAndLadder {
                 }
             } else if (option == 2) {
                 System.out.println("Ladder for the player");
-                playerPosition += diceNumber;
-                if (playerPosition > 100) {
-                    playerPosition -= diceNumber;
-                }
+                playerPosition += diceNumber;     
             } else {
                 System.out.println("No Play for the player");
             }
@@ -38,3 +35,4 @@ public class SnakeAndLadder {
         }
     }
 }
+
